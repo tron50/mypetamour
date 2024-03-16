@@ -34,3 +34,17 @@ nav ul li {
 }
 
 /* Add more CSS styling for other sections, buttons, etc. as needed */
+/* Additional CSS for countdown container and clock */
+.countdown-container {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+
+.countdown {
+    text-align: center;
+    font-size: 24px;
+    color: red; /* Red lettering */
+}
+
