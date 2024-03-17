@@ -47,3 +47,14 @@ nav ul li {
     font-size: 24px;
     color: maroon; /* Red lettering */
 }
+/* styles.css */
+.icons {
+    display: flex; /* Align icons horizontally */
+    justify-content: space-between; /* Add space between icons */
+    max-width: 100%; /* Ensure icons don't overflow the container */
+}
+
+.search-icon,
+.cart-icon {
+    margin-right: 10px; /* Adjust the margin between icons */
+}
