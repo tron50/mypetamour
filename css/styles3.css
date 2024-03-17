@@ -43,6 +43,17 @@ nav ul li {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
 }
+/* styles.css */
+.icons {
+    display: flex; /* Align icons horizontally */
+    justify-content: space-between; /* Add space between icons */
+    max-width: 100%; /* Ensure icons don't overflow the container */
+}
+
+.search-icon,
+.cart-icon {
+    margin-right: 10px; /* Adjust the margin between icons */
+}
 
 .countdown {
     font-size: 24px;
