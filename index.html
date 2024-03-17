@@ -6,32 +6,35 @@
     <title>Wonderful Pets | Opening Soon</title>
     <link rel="stylesheet" href="css/styles.css"> <!-- Linking to your CSS file -->
     <style>
-        /* Additional CSS for countdown container and clock */
-        .countdown-container {
-            background-color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
-            text-align: center; /* Center the container */
-            margin-top: 20px; /* Adjust the top margin as needed */
-        }
-        
+        /* Additional CSS for countdown clock */
         .countdown {
+            text-align: center;
             font-size: 24px;
-            color: red; /* Red lettering */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <!-- Navigation elements here -->
+            <img src="img/logo.png" alt="Wonderful Pets Logo">
+            <ul>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/location.html">Location</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <img src="img/search-icon.png" alt="Search">
+                <img src="img/cart-icon.png" alt="Cart">
+            </div>
         </nav>
+        <!-- Countdown Clock -->
+        <div class="countdown" id="countdown"></div>
     </header>
 
     <section class="hero">
         <h1>Welcome to Wonderful Pets!</h1>
-        <p>Discover the joy of owning a pet. Our pet store opens on June 12th this summer. <span id="countdown"></span></p>
+        <p>Discover the joy of owning a pet. Our pet store opens on June 12th this summer.</p>
         <button>Shop Now</button>
         <button>Book Services</button>
     </section>
@@ -58,21 +61,21 @@
     </footer>
 
     <script>
-        // Countdown to May 28
-        var countDownDate = new Date("May 28, 2024 00:00:00").getTime();
-        
+        // Countdown to June 28
+        var countDownDate = new Date("June 28, 2024 00:00:00").getTime();
+
         var x = setInterval(function() {
             var now = new Date().getTime();
             var distance = countDownDate - now;
-        
+
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
             document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
-        
+
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("countdown").innerHTML = "EXPIRED";
