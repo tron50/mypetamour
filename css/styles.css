@@ -40,11 +40,10 @@ nav ul li {
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
-    text-align: center; /* Center the container */
-    margin-top: 40px; /* Adjust the top margin as needed */
 }
 
 .countdown {
+    text-align: center;
     font-size: 24px;
     color: red; /* Red lettering */
 }
