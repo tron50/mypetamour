@@ -1,5 +1,6 @@
 /* CSS for setting background image */
 body {
+  background: #000 url('../img/backgroundhome.jpg') top left no-repeat;
   background-image: url('../img/backgroundhome.jpg'); /* Replace 'background.jpg' with the path to your background image */
   background-size: cover;
   background-position: center;
